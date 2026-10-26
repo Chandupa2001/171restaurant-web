@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- 171 Restaurant logo: sand disc, two tall olive "1" bars, olive "7" between them -->
+  <circle cx="50" cy="50" r="50" fill="#D0B284"/>
+  <rect x="26" y="22" width="9" height="56" rx="4.5" fill="#767530"/>
+  <rect x="65" y="22" width="9" height="56" rx="4.5" fill="#767530"/>
+  <path d="M40.5 33.5H59.5L47 71" fill="none" stroke="#767530" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

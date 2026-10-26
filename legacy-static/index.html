@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <!-- Flag JS early so scroll-reveal styles only apply when JS can reveal them -->
+  <script>document.documentElement.classList.add('js');</script>
+
+  <!-- ==========================================================
+       SEO
+       NOTE: replace every "https://YOUR-DOMAIN.example" in this file
+       with the real domain once the site is hosted.
+       ========================================================== -->
+  <title>171 Restaurant · Maharagama, Sri Lanka</title>
+  <meta name="description" content="Simple ingredients and authentic recipes that stand the test of time. 171 Restaurant, Old Kottawa Road, Navinna, Maharagama. Open daily 11:00–15:00 and 18:00–22:00.">
+  <link rel="canonical" href="https://YOUR-DOMAIN.example/">
+  <meta name="theme-color" content="#12130E">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <!-- Open Graph / social sharing (og-image.jpg: 1200×630, see images/README.md) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="171 Restaurant">
+  <meta property="og:title" content="171 Restaurant · Maharagama, Sri Lanka">
+  <meta property="og:description" content="Simple ingredients and authentic recipes that stand the test of time.">
+  <meta property="og:url" content="https://YOUR-DOMAIN.example/">
+  <meta property="og:image" content="https://YOUR-DOMAIN.example/images/og-image.jpg">
+  <meta property="og:locale" content="en_LK">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="171 Restaurant · Maharagama, Sri Lanka">
+  <meta name="twitter:description" content="Simple ingredients and authentic recipes that stand the test of time.">
+  <meta name="twitter:image" content="https://YOUR-DOMAIN.example/images/og-image.jpg">
+
+  <!-- Structured data for Google.
+       TODO: add  "priceRange": "..."  once the price range is confirmed. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "171 Restaurant",
+    "slogan": "Simple ingredients and authentic recipes that stand the test of time",
+    "url": "https://YOUR-DOMAIN.example/",
+    "image": "https://YOUR-DOMAIN.example/images/og-image.jpg",
+    "logo": "https://YOUR-DOMAIN.example/favicon.svg",
+    "telephone": "+94112844848",
+    "email": "eat@171restaurant.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "171, Old Kottawa Road, Navinna",
+      "addressLocality": "Maharagama",
+      "addressCountry": "LK"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "11:00",
+        "closes": "15:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "18:00",
+        "closes": "22:00"
+      }
+    ],
+    "hasMap": "https://www.google.com/maps/dir/?api=1&destination=171%2C%20Old%20Kottawa%20Road%2C%20Navinna%2C%20Maharagama%2C%20Sri%20Lanka",
+    "sameAs": [
+      "https://www.facebook.com/171Restaurant/",
+      "https://share.google/6zd9uMjul3UUdJNAN"
+    ]
+  }
+  </script>
+
+  <!-- Fonts: Cormorant Garamond (display) + Jost (body). System fallbacks in CSS. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap">
+
+  <link rel="preload" as="image" href="images/hero.jpg" fetchpriority="high">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body id="top">
+
+  <!-- ==========================================================
+       SVG SPRITE: logo + icons, reused below with <use href="#…">
+       ========================================================== -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <!-- Full-colour logo -->
+    <symbol id="logo" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="50" fill="#D0B284"/>
+      <rect x="26" y="22" width="9" height="56" rx="4.5" fill="#767530"/>
+      <rect x="65" y="22" width="9" height="56" rx="4.5" fill="#767530"/>
+      <path d="M40.5 33.5H59.5L47 71" fill="none" stroke="#767530" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <!-- Line icons (stroke = currentColor) -->
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z"/>
+    </symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3.5 20.5l1.3-4.1A8.5 8.5 0 1 1 8 19.4z"/>
+      <path d="M9 8.6c.2-.4.5-.5.8-.5h.4c.2 0 .3.1.4.3l.6 1.4c.1.2 0 .4-.1.5l-.5.6c.6 1.2 1.5 2.1 2.7 2.7l.6-.5c.1-.1.3-.2.5-.1l1.4.6c.2.1.3.2.3.4v.4c0 .3-.1.6-.5.8-.6.4-1.4.5-2.1.2-2-.8-3.6-2.4-4.4-4.4-.3-.7-.2-1.5.2-2.1z"/>
+    </symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/>
+    </symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2.5" y="4.5" width="19" height="15" rx="1.5"/><path d="m3 6 9 7 9-7"/>
+    </symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+    </symbol>
+    <symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5-4.8-4.6 6.6-.9z"/>
+    </symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 12h16M14 6l6 6-6 6"/>
+    </symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ==========================================================
+       HEADER (fixed). Gains a solid background after scrolling.
+       ========================================================== -->
+  <header class="site-header" data-header>
+    <div class="site-header__inner">
+      <a class="brand" href="#top" aria-label="171 Restaurant, back to top">
+        <svg class="brand__logo" aria-hidden="true"><use href="#logo"/></svg>
+        <span class="brand__name" aria-hidden="true">171 Restaurant</span>
+      </a>
+
+      <div class="site-header__actions">
+        <a class="btn btn--ghost btn--sm" href="tel:+94112844848">
+          <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+          <span>Call</span>
+        </a>
+        <a class="btn btn--ghost btn--sm header-wa" href="https://wa.me/94703462010?text=Hi%20171%20Restaurant%2C%20I'd%20like%20to%20ask%20about%20a%20table." target="_blank" rel="noopener">
+          <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+          <span>WhatsApp</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
+          <span class="menu-toggle__label" data-menu-label>Menu</span>
+          <span class="menu-toggle__icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Full-screen overlay navigation (opened by the MENU button) -->
+  <nav class="nav-overlay" id="site-nav" aria-label="Main" inert data-nav>
+    <div class="nav-overlay__inner">
+      <ol class="nav-overlay__links">
+        <li><a href="#story"><span>01</span>Our story</a></li>
+        <li><a href="#kitchen"><span>02</span>From the kitchen</a></li>
+        <li><a href="#gallery"><span>03</span>Gallery</a></li>
+        <li><a href="#guests"><span>04</span>Guests</a></li>
+        <li><a href="#visit"><span>05</span>Visit us</a></li>
+      </ol>
+      <div class="nav-overlay__contact">
+        <a href="tel:+94112844848">+94 112 844 848</a>
+        <a href="https://wa.me/94703462010?text=Hi%20171%20Restaurant%2C%20I'd%20like%20to%20ask%20about%20a%20table." target="_blank" rel="noopener">WhatsApp +94 70 346 2010</a>
+        <a href="https://www.facebook.com/171Restaurant/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://share.google/6zd9uMjul3UUdJNAN" target="_blank" rel="noopener">Google</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <!-- ========================================================
+         1. HERO: drop your photo in as images/hero.jpg
+         ======================================================== -->
+    <section class="hero" aria-labelledby="hero-title" data-hero>
+      <figure class="hero__media media" data-slot="hero.jpg" data-parallax>
+        <!-- TODO: describe photo -->
+        <img src="images/hero.jpg" alt="A candle-lit table set with a bowl of prawn curry and rice, a brass oil lamp and a cup of tea" width="1264" height="848" fetchpriority="high" decoding="async"
+             onerror="this.closest('figure').classList.add('is-placeholder')">
+      </figure>
+      <div class="hero__scrim" aria-hidden="true"></div>
+
+      <div class="hero__content container">
+        <p class="eyebrow eyebrow--plain reveal">Navinna · Maharagama</p>
+        <h1 class="hero__title reveal" id="hero-title">
+          <span class="hero__num">171</span>
+          <span class="hero__word">Restaurant</span>
+        </h1>
+        <p class="hero__tagline reveal">Simple ingredients and authentic recipes that stand the test of time</p>
+        <div class="btn-row reveal">
+          <a class="btn btn--primary" href="tel:+94112844848">
+            <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+            <span>Call now</span>
+          </a>
+          <a class="btn btn--ghost" href="https://wa.me/94703462010?text=Hi%20171%20Restaurant%2C%20I'd%20like%20to%20ask%20about%20a%20table." target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+            <span>WhatsApp us</span>
+          </a>
+        </div>
+      </div>
+
+      <a class="hero__scroll" href="#story" aria-label="Scroll to our story">
+        <span>Scroll</span>
+      </a>
+    </section>
+
+    <!-- ========================================================
+         2. STORY
+         ======================================================== -->
+    <section class="story section glow glow--right" id="story" aria-labelledby="story-title">
+      <div class="story__grid">
+        <figure class="story__media media reveal" data-slot="story.jpg">
+          <!-- TODO: describe photo -->
+          <img src="images/story.jpg" alt="Inside the kitchen at 171 Restaurant" width="1200" height="1500" loading="lazy" decoding="async"
+               onerror="this.closest('figure').classList.add('is-placeholder')">
+        </figure>
+
+        <div class="story__text">
+          <p class="eyebrow reveal"><span>01</span>Our story</p>
+          <h2 class="display reveal" id="story-title">Simple ingredients.<br><em>Authentic recipes.</em></h2>
+          <p class="lead reveal">Some things don’t need reinventing. We start with good produce, cook it the way it has always been cooked, and let the flavour speak for itself.</p>
+          <p class="reveal">Recipes that stand the test of time, served without fuss. Come hungry, stay a while.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         3. MENU HIGHLIGHTS: cards are rendered from MENU in js/main.js
+         ======================================================== -->
+    <section class="kitchen section" id="kitchen" aria-labelledby="kitchen-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow reveal"><span>02</span>From the kitchen</p>
+          <h2 class="title reveal" id="kitchen-title">Signature plates</h2>
+        </header>
+
+        <div class="dishes" data-menu>
+          <noscript><p class="muted">Ask us about today’s menu: call +94 112 844 848.</p></noscript>
+        </div>
+
+        <div class="section-foot reveal">
+          <!-- js/main.js fills this link from FULL_MENU_URL (or falls back to WhatsApp) -->
+          <a class="link-arrow" data-menu-link href="https://wa.me/94703462010?text=Hi%20171%20Restaurant%2C%20what's%20on%20the%20menu%20today%3F" target="_blank" rel="noopener">
+            <span>Ask about today’s menu</span>
+            <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         4. GALLERY: horizontal strip, images/gallery-1…8.jpg
+         ======================================================== -->
+    <section class="gallery section glow glow--left" id="gallery" aria-labelledby="gallery-title">
+      <div class="container gallery__head">
+        <div>
+          <p class="eyebrow reveal"><span>03</span>Gallery</p>
+          <h2 class="title reveal" id="gallery-title">The room, the table, the plate</h2>
+        </div>
+        <div class="gallery__controls reveal">
+          <span class="gallery__count" aria-hidden="true"><span data-gallery-current>001</span> / <span data-gallery-total>008</span></span>
+          <button class="icon-btn" type="button" data-gallery-prev aria-label="Previous photos">
+            <svg class="icon icon--flip" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </button>
+          <button class="icon-btn" type="button" data-gallery-next aria-label="Next photos">
+            <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- TODO: describe each photo in its alt text -->
+      <div class="strip reveal" tabindex="0" role="region" aria-label="Gallery photos, scroll sideways" data-gallery>
+        <figure class="strip__item media" data-slot="gallery-1.jpg"><img src="images/gallery-1.jpg" alt="171 Restaurant gallery photo 1" width="900" height="1200" loading="lazy" decoding="async" onerror="this.closest('figure').classList.add('is-placeholder')"></figure>
+        <figure class="strip__item media" data-slot="gallery-2.jpg"><img src="images/gallery-2.jpg" alt="171 Restaurant gallery photo 2" width="1200" height="900" loading="lazy" decoding="async" onerror="this.closest('figure').classList.add('is-placeholder')"></figure>
+        <figure class="strip__item media" data-slot="gallery-3.jpg"><img src="images/gallery-3.jpg" alt="171 Restaurant gallery photo 3" width="900" height="1200" loading="lazy" decoding="async" onerror="this.closest('figure').classList.add('is-placeholder')"></figure>
+        <figure class="strip__item media" data-slot="gallery-4.jpg"><img src="images/gallery-4.jpg" alt="171 Restaurant gallery photo 4" width="1200" height="900" loading="lazy" decoding="async" onerror="this.closest('figure').classList.add('is-placeholder')"></figure>
+        <figure class="strip__item media" data-slot="gallery-5.jpg"><img src="images/gallery-5.jpg" alt="171 Restaurant gallery photo 5" width="900" height="1200" loading="lazy" decoding="async" onerror="this.closest('figure').classList.add('is-placeholder')"></figure>
+        <figure class="strip__item media" data-slot="gallery-6.jpg"><img src="images/gallery-6.jpg" alt="171 Restaurant gallery photo 6" width="1200" height="900" loading="lazy" decoding="async" onerror="this.closest('figure').classList.add('is-placeholder')"></figure>
+        <figure class="strip__item media" data-slot="gallery-7.jpg"><img src="images/gallery-7.jpg" alt="171 Restaurant gallery photo 7" width="900" height="1200" loading="lazy" decoding="async" onerror="this.closest('figure').classList.add('is-placeholder')"></figure>
+        <figure class="strip__item media" data-slot="gallery-8.jpg"><img src="images/gallery-8.jpg" alt="171 Restaurant gallery photo 8" width="1200" height="900" loading="lazy" decoding="async" onerror="this.closest('figure').classList.add('is-placeholder')"></figure>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         5. REVIEWS: real reviews go in REVIEWS in js/main.js
+         ======================================================== -->
+    <section class="guests section" id="guests" aria-labelledby="guests-title">
+      <div class="container guests__inner">
+        <p class="eyebrow eyebrow--center reveal"><span>04</span>Guests</p>
+        <h2 class="statement reveal" id="guests-title"><em>Hear it from our guests.</em></h2>
+        <p class="guests__rating reveal" data-rating hidden></p>
+        <div class="reviews" data-reviews></div>
+        <div class="btn-row btn-row--center reveal">
+          <a class="btn btn--ghost" href="https://share.google/6zd9uMjul3UUdJNAN" target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>
+            <span>Read our reviews on Google</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         6. VISIT US
+         ======================================================== -->
+    <section class="visit section glow glow--center" id="visit" aria-labelledby="visit-title">
+      <div class="container">
+        <p class="eyebrow eyebrow--center reveal"><span>05</span>Visit us</p>
+
+        <div class="visit__grid">
+          <article class="visit-card reveal">
+            <svg class="visit-card__logo" aria-hidden="true"><use href="#logo"/></svg>
+            <h2 class="title title--sm" id="visit-title">Welcome to 171</h2>
+
+            <address class="visit-card__address">
+              171, Old Kottawa Road,<br>Navinna, Maharagama,<br>Sri Lanka
+            </address>
+
+            <!-- Open/closed status, calculated in js/main.js (Asia/Colombo time) -->
+            <p class="status" data-status aria-live="polite" hidden>
+              <span class="status__dot" aria-hidden="true"></span>
+              <span class="status__label" data-status-label></span>
+              <span class="status__detail" data-status-detail></span>
+            </p>
+
+            <dl class="hours">
+              <dt>Monday – Sunday</dt>
+              <dd>11:00 – 15:00<br>18:00 – 22:00</dd>
+            </dl>
+
+            <ul class="visit-card__contact">
+              <li><a href="tel:+94112844848"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>+94 112 844 848</a></li>
+              <li><a href="https://wa.me/94703462010?text=Hi%20171%20Restaurant%2C%20I'd%20like%20to%20ask%20about%20a%20table." target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>+94 70 346 2010</a></li>
+              <li><a href="mailto:eat@171restaurant.com"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>eat@171restaurant.com</a></li>
+            </ul>
+
+            <a class="btn btn--primary" href="https://www.google.com/maps/dir/?api=1&amp;destination=171%2C%20Old%20Kottawa%20Road%2C%20Navinna%2C%20Maharagama%2C%20Sri%20Lanka" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+              <span>Get directions</span>
+            </a>
+          </article>
+
+          <div class="visit__map reveal">
+            <iframe
+              src="https://www.google.com/maps?q=171%2C%20Old%20Kottawa%20Road%2C%20Navinna%2C%20Maharagama%2C%20Sri%20Lanka&amp;output=embed"
+              title="Map showing 171 Restaurant on Old Kottawa Road, Maharagama"
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         7. CLOSING PROMPT
+         ======================================================== -->
+    <section class="closing section glow glow--center" aria-labelledby="closing-title">
+      <div class="container closing__inner">
+        <span class="closing__num" aria-hidden="true">171</span>
+        <h2 class="statement reveal" id="closing-title">Come as you are.<br><em>We’ll keep a table warm.</em></h2>
+        <p class="closing__sub reveal">Call, message, or simply stop by. Lunch from 11:00, dinner from 18:00, every day.</p>
+        <div class="btn-row btn-row--center reveal">
+          <a class="btn btn--primary" href="tel:+94112844848">
+            <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span>Call now</span>
+          </a>
+          <a class="btn btn--ghost" href="https://wa.me/94703462010?text=Hi%20171%20Restaurant%2C%20I'd%20like%20to%20ask%20about%20a%20table." target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg><span>WhatsApp us</span>
+          </a>
+          <a class="btn btn--ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=171%2C%20Old%20Kottawa%20Road%2C%20Navinna%2C%20Maharagama%2C%20Sri%20Lanka" target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><span>Get directions</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================
+       FOOTER
+       ========================================================== -->
+  <footer class="site-footer">
+    <div class="container site-footer__grid">
+      <div class="site-footer__brand">
+        <svg class="site-footer__logo" aria-hidden="true"><use href="#logo"/></svg>
+        <p class="site-footer__name">171 Restaurant</p>
+        <p class="muted">Simple ingredients and authentic recipes that stand the test of time.</p>
+      </div>
+
+      <div>
+        <h2 class="micro">Find us</h2>
+        <address>171, Old Kottawa Road,<br>Navinna, Maharagama,<br>Sri Lanka</address>
+      </div>
+
+      <div>
+        <h2 class="micro">Hours</h2>
+        <p>Every day<br>11:00 – 15:00<br>18:00 – 22:00</p>
+      </div>
+
+      <div>
+        <h2 class="micro">Contact</h2>
+        <ul class="plain-list">
+          <li><a href="tel:+94112844848">+94 112 844 848</a></li>
+          <li><a href="https://wa.me/94703462010?text=Hi%20171%20Restaurant%2C%20I'd%20like%20to%20ask%20about%20a%20table." target="_blank" rel="noopener">WhatsApp +94 70 346 2010</a></li>
+          <li><a href="mailto:eat@171restaurant.com">eat@171restaurant.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container site-footer__bottom">
+      <p>© <span data-year>2026</span> 171 Restaurant</p>
+      <div class="site-footer__social">
+        <a class="icon-btn" href="https://www.facebook.com/171Restaurant/" target="_blank" rel="noopener" aria-label="171 Restaurant on Facebook">
+          <svg class="icon" aria-hidden="true"><use href="#i-facebook"/></svg>
+        </a>
+        <a class="icon-btn" href="https://share.google/6zd9uMjul3UUdJNAN" target="_blank" rel="noopener" aria-label="171 Restaurant on Google">
+          <svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================
+       MOBILE ACTION BAR (hidden on wide screens)
+       ========================================================== -->
+  <nav class="action-bar" aria-label="Quick contact">
+    <a href="tel:+94112844848">
+      <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span>Call</span>
+    </a>
+    <a href="https://wa.me/94703462010?text=Hi%20171%20Restaurant%2C%20I'd%20like%20to%20ask%20about%20a%20table." target="_blank" rel="noopener">
+      <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg><span>WhatsApp</span>
+    </a>
+    <a href="https://www.google.com/maps/dir/?api=1&amp;destination=171%2C%20Old%20Kottawa%20Road%2C%20Navinna%2C%20Maharagama%2C%20Sri%20Lanka" target="_blank" rel="noopener">
+      <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><span>Directions</span>
+    </a>
+  </nav>
+
+</body>
+</html>

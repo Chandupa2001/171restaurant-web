@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <!-- Flag JS early so scroll-reveal styles only apply when JS can reveal them -->
+  <script>document.documentElement.classList.add('js');</script>
+
+  <!-- ==========================================================
+       SEO
+       NOTE: replace every "https://YOUR-DOMAIN.example" in this file
+       with the real domain once the site is hosted.
+       ========================================================== -->
+  <title>171 Restaurant · Maharagama, Sri Lanka</title>
+  <meta name="description" content="Simple ingredients and authentic recipes that stand the test of time. 171 Restaurant, Old Kottawa Road, Navinna, Maharagama. Open daily 11:00–15:00 and 18:00–22:00.">
+  <link rel="canonical" href="https://YOUR-DOMAIN.example/">
+  <meta name="theme-color" content="#12130E">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+  <!-- Open Graph / social sharing (og-image.jpg: 1200×630, see README.md) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="171 Restaurant">
+  <meta property="og:title" content="171 Restaurant · Maharagama, Sri Lanka">
+  <meta property="og:description" content="Simple ingredients and authentic recipes that stand the test of time.">
+  <meta property="og:url" content="https://YOUR-DOMAIN.example/">
+  <meta property="og:image" content="https://YOUR-DOMAIN.example/images/og-image.jpg">
+  <meta property="og:locale" content="en_LK">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="171 Restaurant · Maharagama, Sri Lanka">
+  <meta name="twitter:description" content="Simple ingredients and authentic recipes that stand the test of time.">
+  <meta name="twitter:image" content="https://YOUR-DOMAIN.example/images/og-image.jpg">
+
+  <!-- Structured data for Google.
+       TODO: add  "priceRange": "..."  once the price range is confirmed. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "171 Restaurant",
+    "slogan": "Simple ingredients and authentic recipes that stand the test of time",
+    "url": "https://YOUR-DOMAIN.example/",
+    "image": "https://YOUR-DOMAIN.example/images/og-image.jpg",
+    "logo": "https://YOUR-DOMAIN.example/favicon.svg",
+    "telephone": "+94112844848",
+    "email": "eat@171restaurant.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "171, Old Kottawa Road, Navinna",
+      "addressLocality": "Maharagama",
+      "addressCountry": "LK"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "11:00",
+        "closes": "15:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "18:00",
+        "closes": "22:00"
+      }
+    ],
+    "hasMap": "https://www.google.com/maps/dir/?api=1&destination=171%2C%20Old%20Kottawa%20Road%2C%20Navinna%2C%20Maharagama%2C%20Sri%20Lanka",
+    "sameAs": [
+      "https://www.facebook.com/171Restaurant/",
+      "https://share.google/6zd9uMjul3UUdJNAN"
+    ]
+  }
+  </script>
+
+  <!-- Fonts: Cormorant Garamond (display) + Jost (body). System fallbacks in CSS. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap">
+
+  <link rel="preload" as="image" href="/images/hero.jpg" fetchpriority="high">
+</head>
+
+<body id="top">
+  <div id="root"></div>
+  <noscript>
+    <p style="padding:2rem;font-family:system-ui,sans-serif;color:#F1EADB;background:#12130E">
+      171 Restaurant · 171, Old Kottawa Road, Navinna, Maharagama · Call +94 112 844 848 · Open daily 11:00–15:00 and 18:00–22:00
+    </p>
+  </noscript>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
